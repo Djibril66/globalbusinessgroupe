@@ -1,0 +1,802 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color: black;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.logo span{
+    color: blue;
+    font-size: 1.6em;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+.navbar li{
+    list-style: none;
+}
+.navbar a{
+    color: blue;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.btn-reserve{
+    padding: 10px 20px;
+    background: white;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-reserve:hover{
+    background: red;
+    color: white;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(a1.JPG);
+    background-size: cover;
+}
+
+.banniere .contenu{
+    max-width: 70%;
+    text-align: center;
+    background: rgba(0,0,0,0.6);
+    padding: 30px 5px;
+    border-radius: 10px;
+}
+.banniere .contenu h2{
+    color: white;
+    font-size: 2.3em;
+    text-transform: capitalize;
+}
+.contenu p:nth-child(2){
+    color: wheat;
+    font-size: 0.8em;
+}
+.bnt1{
+    font-size: 1em;
+    color: white;
+    background: blue;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.bnt2{
+    font-size: 1em;
+    color: white;
+    background: red;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+
+.bnt1:hover{
+    letter-spacing: 5px;
+}
+
+section{
+    padding: 100px;
+}
+
+.apple{
+    margin-top: 10px;
+}
+
+.apple .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.apple .contenu .box{
+    width: 240px;
+    margin: 20px;
+    border: 2px solid white;
+    box-shadow: 10px 15px 15px black;
+}
+
+.apple .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.apple .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.apple .contenu .box .text{
+    text-align: center;
+    font-weight: 300;
+    color: blue;
+    background: white;
+    padding: 10px 10px;
+}
+.apple .contenu .box .text h3{
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.apple .contenu .box .text p{
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.android{
+    margin-top: 10px;
+    background-image: url(aa.JPG);
+    background-size: cover;
+}
+
+.android .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.android .contenu .box{
+    width: 240px;
+    margin: 20px;
+    border: 5px solid white;
+    box-shadow: 10px 15px 15px black;
+}
+
+.android .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.android .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.android .contenu .box .text{
+    text-align: center;
+    font-weight: 300;
+    color: blue;
+    background: white;
+    padding: 10px 10px;
+}
+.android .contenu .box .text h3{
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.android .contenu .box .text p{
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ordinateurs{
+    margin-top: 10px;
+}
+
+.ordinateurs .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.ordinateurs .contenu .box{
+    width: 240px;
+    margin: 20px;
+    border: 5px solid white;
+    box-shadow: 10px 15px 15px black;
+}
+
+.ordinateurs .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.ordinateurs .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.ordinateurs .contenu .box .text{
+    text-align: center;
+    font-weight: 300;
+    color: blue;
+    background: white;
+    padding: 10px 10px;
+}
+.ordinateurs .contenu .box .text h3{
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.ordinateurs .contenu .box .text p{
+    font-weight: 400;
+    color: white;
+    margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.accessoires{
+    margin-top: 10px;
+    background-image: url(b2.JPG);
+    background-size: cover;
+}
+
+.accessoires .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.accessoires .contenu .box{
+    width: 240px;
+    margin: 20px;
+    border: 5px solid white;
+    box-shadow: 10px 15px 15px white;
+}
+
+.accessoires.contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.accessoires .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.accessoires.contenu .box .text{
+    text-align: center;
+    font-weight: 300;
+    color: black;
+}
+.accessoires .contenu .box .text h3{
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: -10px;
+    background: white;
+    color: blue;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.accessoires .contenu .box .text p{
+    font-weight: 400;
+    color: white;
+    background: blue;
+    margin-bottom: -100px;
+    text-align: center;
+    margin-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.experts{
+    margin-top: -20px;
+}
+
+.experts .contenu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.experts .contenu .box{
+    width: 150px;
+    margin: 20px;
+}
+.experts .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 180px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 1px 1px 10px black;
+}
+
+.experts .contenu .box h3{
+    color: blue;
+    font-weight: 400;
+    text-align: center;margin-top: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.experts .contenu .box p{
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 10px;
+    margin-left: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.apropos{
+    margin-top: -100px;
+    background-image: url(bb.JPG);
+    background-size: cover;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+
+.row .col50 p{
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 30px 10px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.titre-texte{
+    color: red;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titre p{
+    color: white;
+    background: white;
+    margin-top: 10px;
+    padding: 10px 10px;
+    background: rgba(0,0,0,0.6);
+    background-size: cover;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.titre-texte span{
+    color: blue;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.row .col50 img{
+    height: 350px;
+    width: 500px;
+    position: relative;
+    margin: 50px;
+    border: 5px solid white;
+    box-shadow: -15px -15px 20px white;
+}
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services{
+    margin-top: 10px;
+}
+
+.services .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.services .contenu .box{
+    width: 340px;
+    margin: 20px;
+    border: 5px solid white;
+    box-shadow: 10px 15px 15px red;
+}
+
+.services .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.services .contenu .box .imbox h3{
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    background: blue;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.services .contenu .box .imbox p{
+    padding: 30px 12px;
+    color: red;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contact{
+    background-image: url(b1.WEBP);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.8);
+    width: 100%;
+    background-position: unset;
+}
+
+.contactform{
+    padding: 40px 50px;
+    background: white;
+    box-shadow: 5px 15px 50px rgba(0,0,0,0.8);
+    max-width: 700px;
+    margin-top: 50px;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform h3{
+    color: red;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.contactform .inputboite input, .contactform .inputboite textarea{
+    width: 100%;
+    border: 2px solid red;
+    padding: 10px;
+    color: blue;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+    margin-top: 10px;
+    transition: 3s;
+}
+
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background-color: blue;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.contactform .inputboite label{
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: blue;
+}
+
+.contactform .inputboite iframe{
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    width: 100%;
+    background: white;
+}
+
+footer p{
+    color: black;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+footer p span{
+    color: blue;
+    font-weight: bold;
+}
+
+header.sticky{
+    background: white;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+}
+header.sticky .logo{
+    color: black;
+}
+
+header.sticky .navbar li a{
+    color: black;
+}
+
+header.sticky li a:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.responsive-menu{
+    display: none;
+}
+
+@media (max-width:750px){
+    header .navbar{
+        display: none;
+    }
+    .btn-reserve{
+        display: none;
+    }
+
+    #banniere .contenu h2{
+        font-size: 25px;
+        -webkit-text-stroke: 0;
+    }
+    #banniere .contenu p{
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #apple .titre .titre-texte{
+        font-size: 25px;
+    }
+    #apple .titre p{
+        font-size: 15px;
+    }
+    #apple .titre .bnt1{
+        font-size: 10px;
+    }
+
+    #android .titre .titre-texte{
+        font-size: 25px;
+    }
+    #android .titre p{
+        font-size: 15px;
+    }
+    #android .titre .bnt1{
+        font-size: 10px;
+    }
+
+    #ordinateurs .titre .titre-texte{
+        font-size: 18px;
+    }
+    #ordinateurs .titre p{
+        font-size: 15px;
+    }
+    #ordinateurs .titre .bnt1{
+        font-size: 10px;
+    }
+
+    #accessoires .titre .titre-texte{
+        font-size: 25px;
+    }
+    #accessoires .titre p{
+        font-size: 15px;
+    }
+    #accessoires .titre .bnt1{
+        font-size: 10px;
+    }
+
+    #experts .titre .titre-texte{
+        font-size: 25px;
+    }
+    #experts .titre p{
+        font-size: 15px;
+    }   
+    #experts .contenu{
+        margin-left: 45px;
+    }
+
+    #apropos .row .col50 .titre-texte{
+        font-size: 25px;
+    }
+    #apropos .row .col50{
+        font-size: 15px;
+    }
+    #apropos .row .col50 p{
+        font-size: 10px;
+        margin-bottom: 30px;
+    }
+    #apropos .row .col50 img{
+        width: 130px;
+        height: 180px;
+    }
+    #apropos .row .col50 .bnt1{
+        font-size: 10px;
+    }
+    
+    #services .titre .titre-texte{
+        font-size: 25px;
+    }
+    #services .titre{
+        font-size: 16px;
+    }
+
+    #services .contenu .box .imbox p{
+        font-size: 15px;
+    }
+    #services .titre .bnt1{
+        font-size: 8px;
+    }
+
+    #contact .contactform h3{
+        font-size: 12px;
+    }
+    #contact .contactform .inputboite input[type="submit"]{
+        font-size: 13px;
+        padding: 10px 5px;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    .responsive-menu{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        background-color: red;
+    }
+    .responsive-menu::after{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: blue;
+        width: 28px;
+        box-shadow: 0 10px 0 blue;
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::after{
+        box-shadow: 0 0 0 blue;
+        transform: rotate(45deg);
+    }
+    .responsive-menu::before{
+        position: absolute;
+        content: "";
+        height: 3px;
+        background-color: blue;
+        width: 28px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .responsive-menu.active::before{
+        box-shadow: 0 0 0 blue;
+        transform: rotate(-45deg);
+    }
+
+    header .navbar.responsive{
+        display: flex;
+        position: absolute;
+        top: 70px;
+        right: 10px;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+        animation: animate-menu 1s forwards;
+    }
+    header .navbar.responsive li{
+        margin: 10px;
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    @keyframes animate-menu{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(50%);
+        }
+    }
+}
